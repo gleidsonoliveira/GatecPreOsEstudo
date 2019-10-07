@@ -6,7 +6,8 @@ import { StackActions, NavigationActions } from 'react-navigation';
 
 import api from '../../services/api';
 
-class HomeScreen extends Component {
+export default class MainScreen extends Component 
+{
   static navigationOptions = {
     title: 'Welcome',
   };

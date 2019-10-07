@@ -21,11 +21,7 @@ export default class login extends Component {
 
     state = { username: "Gleidson Guilherme", password: "090809", error: '' }
 
-    handleCreateAccountPress = () => {
-        this.props.navigation.navigate('SignUp');
-    };
-    
-    handleLogin = async () => 
+    handleLogin = () => 
     {
         if (this.state.username.length === 0 || this.state.password.length === 0) 
         {
@@ -39,7 +35,7 @@ export default class login extends Component {
         {
             try 
             {
-                this.props.navigation.navigate('Main')
+                this.props.navigation.navigate('MainScreen')
             } 
             catch (_err) 
             {
