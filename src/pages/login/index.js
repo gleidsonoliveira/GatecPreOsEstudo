@@ -35,7 +35,7 @@ export default class login extends Component {
         {
             try 
             {
-                this.props.navigation.navigate('MainScreen')
+                this.props.navigation.push('Main')
             } 
             catch (_err) 
             {
