@@ -19,7 +19,7 @@ export default class login extends Component {
 
     static propTypes = { navigation: PropTypes.shape({navigate: PropTypes.func,dispatch: PropTypes.func}).isRequired };
 
-    state = { username: "gleidson Guilherme", password: "090809", error: '' }
+    state = { username: "Gleidson Guilherme", password: "090809", error: '' }
 
     handleCreateAccountPress = () => {
         this.props.navigation.navigate('SignUp');
@@ -39,16 +39,6 @@ export default class login extends Component {
         {
             try 
             {
-
-                
-                debugger
-                //const response = await api.post('/sessions',{email: this.state.username,password: this.state.password});
-                // const resetAction = StackActions.reset({index: 0,actions: [NavigationActions.navigate({ routeName: 'Main', params: 
-                // { 
-                //     //token: response.data.token 
-                //     token: ""
-                // } }),]});
-                // this.props.navigation.dispatch(resetAction);
                 this.props.navigation.navigate('Main')
             } 
             catch (_err) 

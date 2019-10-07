@@ -6,12 +6,17 @@ import { StackActions, NavigationActions } from 'react-navigation';
 
 import api from '../../services/api';
 
-export default class Main extends React.Component {
+class HomeScreen extends Component {
+  static navigationOptions = {
+    title: 'Welcome',
+  };
   render() {
+    const {navigate} = this.props.navigation;
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Home Screen</Text>
-      </View>
+      <Button
+        title="Go to Jane's profile"
+        onPress={() => navigate('Profile', {name: 'Jane'})}
+      />
     );
   }
 }
